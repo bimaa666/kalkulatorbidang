@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Segitiga">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="SEGITIGA"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txt_alass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Masukkan Alas Segitiga"/>
+
+    <EditText
+        android:id="@+id/txt_tinggis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Masukkan Tinggi Segitiga"/>
+
+    <EditText
+        android:id="@+id/txt_sisias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan Sisi a Segitiga"/>
+
+    <EditText
+        android:id="@+id/txt_sisibs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan Sisi b Segitiga"/>
+
+    <EditText
+        android:id="@+id/txt_sisics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan Sisi c Segitiga"/>
+
+    <Button
+        android:id="@+id/luSegitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luas"
+        android:onClick="lSegitiga"/>
+
+    <Button
+        android:id="@+id/keSegitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keliling"
+        android:onClick="kSegitiga"/>
+
+    <TextView
+        android:id="@+id/hasils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Hasil:"/>
+
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:onClick="kembalis"/>
+
+</LinearLayout>

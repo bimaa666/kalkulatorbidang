@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Persegi">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="PERSEGI"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txt_sisip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan Sisi"/>
+
+    <Button
+        android:id="@+id/luas1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luas Persegi"
+        android:onClick="lPersegi"/>
+
+    <Button
+        android:id="@+id/keliling1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keliling Persegi"
+        android:onClick="kPersegi"/>
+
+    <TextView
+        android:id="@+id/hasilp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Hasil:"/>
+
+    <EditText
+        android:id="@+id/hasil1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:onClick="kembalip"/>
+
+
+</LinearLayout>
